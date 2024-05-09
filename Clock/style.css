@@ -1,0 +1,18 @@
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+    background-image: url(https://img1.akspic.ru/crops/2/7/1/6/6/166172/166172-macos_12_monterey_official_stock_wallpaper_6k_resolution_dark-1920x1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.clock {
+    margin: 0 auto;
+}
+.clock-border {
+    border: solid white 10px;
+    border-radius: 50%;
+    width: 30vh;
+    height: 30vh;
+}

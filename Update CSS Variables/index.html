@@ -9,19 +9,20 @@
 <body>
     <h1>Update CSS Variables with <span class='JS-text'>JavaScript</span></h1>
     <div class="variables">
-        <div class="variables__spacing block">
+        <div class="block">
             <label for="spacing" class="text">Spacing</label>
-            <input type="range" name="spacing" value="0" min="0" max="100">
+            <input type="range" id='spacing' name="spacing" value="0" min="0" max="100" data-sizing="px">
         </div>
-        <div class="variables__blur block">
+        <div class="block">
             <label for="blur" class="text">Blur</label>
-            <input type="range" name="blur" value="0" min="0" max="100">
+            <input type="range" id='blur' name="blur" value="0" min="0" max="100" data-sizing="px">
         </div>
-        <div class="variables__base-color block">
+        <div class="block">
             <label for="base-color" class="text">Base Color</label>
-            <input type="color" name="base-color" value="#fff">
+            <input type="color" id='base-color' name="base" value="#ffffff">
         </div>
     </div>
     <img src="https://img1.akspic.ru/previews/7/5/9/7/7/177957/177957-neon_avto-krajsler_neon-legkovyye_avtomobili-dodzh_chellendzher-dodge-x750.jpg" alt="img">
+    <script src="./script.js"></script>
 </body>
 </html>

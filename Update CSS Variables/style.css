@@ -15,7 +15,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     flex-basis: 250px;
 
 }
@@ -31,7 +31,7 @@ h1 {
     font-size: 4.5rem;
 }
 :root{
-    --base: #ffffff;
+    --base: #f8cfcf;
     --spacing: 10px;
     --blur: 10px;
 }
@@ -39,6 +39,7 @@ h1 {
     color: var(--base);
 }
 img {
+    margin: 0 auto;
     padding: var(--spacing);
     background: var(--base);
     filter: blur(var(--blur));

@@ -30,3 +30,16 @@ h1 {
     color: #fff;
     font-size: 4.5rem;
 }
+:root{
+    --base: #ffffff;
+    --spacing: 10px;
+    --blur: 10px;
+}
+.JS-text {
+    color: var(--base);
+}
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}

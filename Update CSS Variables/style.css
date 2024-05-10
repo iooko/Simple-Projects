@@ -2,4 +2,31 @@ html {
     margin: 0;
     padding: 0;
     background-color: #20387e;
+    font-family: sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+}
+h1 {
+    font-size: 5rem;
+    margin: 75px auto;
+}
+.variables {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+    flex-basis: 250px;
+
+}
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.text {
+    color: #fff;
+    font-size: 4.5rem;
 }

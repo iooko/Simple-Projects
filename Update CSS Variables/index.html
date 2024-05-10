@@ -9,12 +9,18 @@
 <body>
     <h1>Update CSS Variables with <span class='JS-text'>JavaScript</span></h1>
     <div class="variables">
-        <label for="spacing">Spacing</label>
-        <input type="range" name="spacing" value="0" min="0" max="100">
-        <label for="blur">Blur</label>
-        <input type="range" name="blur" value="0" min="0" max="100">
-        <label for="base-color">Base Color</label>
-        <input type="color" name="base-color" value="#fff">
+        <div class="variables__spacing block">
+            <label for="spacing" class="text">Spacing</label>
+            <input type="range" name="spacing" value="0" min="0" max="100">
+        </div>
+        <div class="variables__blur block">
+            <label for="blur" class="text">Blur</label>
+            <input type="range" name="blur" value="0" min="0" max="100">
+        </div>
+        <div class="variables__base-color block">
+            <label for="base-color" class="text">Base Color</label>
+            <input type="color" name="base-color" value="#fff">
+        </div>
     </div>
 </body>
 </html>

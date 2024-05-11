@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+}
+
+body {
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.panels {
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+}
+.panel1 {
+    background-image: url(https://img.freepik.com/free-photo/vertical-shot-of-the-beautiful-sea-with-high-rocky-cliffs-on-the-left_181624-2708.jpg?w=740&t=st=1715446972~exp=1715447572~hmac=9775f52f41cadda9c0a915693222e8ada9017d80255ba3776b51eb8b34e3ee3a);
+}
+.panel2 {
+    background-image: url(https://img.freepik.com/free-photo/a-beautiful-plant-closeup_181624-614.jpg?w=740&t=st=1715446942~exp=1715447542~hmac=b7595402ea69c377bee1bedc97b92d273d2d58411495cca5352fd2fac1db64fb);
+}
+.panel3 {
+
+    background-image: url(https://img.freepik.com/free-photo/vertical-of-the-famous-rural-de-anaga-park-las-spain-scenic-nature-park_181624-6510.jpg?w=740&t=st=1715446809~exp=1715447409~hmac=a9073e04c6395bc841423f22b28f7ea5033853929d77a5ac7f560a07c0f159ee);
+}
+.panel4 {
+    background-image: url(https://img.freepik.com/free-photo/3d-green-palm-leaves-assortment_23-2149015450.jpg?w=740&t=st=1715447238~exp=1715447838~hmac=5d108555d341792d0cceaed53621a5731de03fe05d9d4230fe809590ab3e075e);
+}
+.panel5 {
+    background-image: url(https://img.freepik.com/free-photo/vertical-high-angle-shot-of-the-rocky-shore-of-the-sea-on-a-gloomy-day_181624-9709.jpg?w=740&t=st=1715447046~exp=1715447646~hmac=ed73e7590b8e9d265904a495e7270c21d5577217f925438c2742dda161fdc775);
+}
+.panel {
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    /* Safari transitionend event.propertyName === flex */
+    /* Chrome + FF transitionend event.propertyName === flex-grow */
+    transition:
+      font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+      flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+      background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.panel > * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel p {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 2em;
+}
+.panel p:nth-child(2) {
+    font-size: 4em;
+}
+.panel.open {
+    flex: 5;
+    font-size: 40px;
+}
+.panel >*:first-child {
+    transform: translateY(-100%);
+}
+.panel >*:last-child {
+    transform: translateY(100%);
+}
+.panel.open-active >*:first-child {
+    transform: translateY(0);
+}
+.panel.open-active >*:last-child {
+    transform: translateY(0);
+}

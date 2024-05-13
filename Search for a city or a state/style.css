@@ -1,9 +1,10 @@
 html {
     box-sizing: border-box;
-    background-color: #253e82;
-    font-family: 'helvetica neue';
+    background-color: #ffc600;
+    font-family: sans-serif;
     font-size: 10px;
     font-weight: 200;
+    color:rgb(104, 93, 36);
 }
 *, *:after, *:before {
     box-sizing: inherit;
@@ -15,6 +16,7 @@ html {
 input {
     width: 100%;
     padding: 20px;
+    color: rgb(104, 93, 36);
 }
 input.search {
     border: 10px solid #F7F7F7;
@@ -54,4 +56,10 @@ input.search {
 .suggestions li:nth-child(odd) {
     transform: perspective(100px) rotateX(-3deg) translateY(3px);
     background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+}
+.hl {
+    background: #ffc600;
+}
+span.population {
+    font-size: 15px;
 }

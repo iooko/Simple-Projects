@@ -32,3 +32,6 @@ p {
     font-size: 30px;
     color: rgb(99, 99, 99);
 }
+input:checked + p {
+    text-decoration: line-through;
+}
